@@ -1,0 +1,243 @@
+IndexIgnore *
+RewriteEngine On
+RewriteBase /
+  
+# Force SSL on all pages excluding Socket cluster dependent pages
+RewriteCond %{HTTPS} off [NC]
+RewriteCond %{HTTP_HOST} ^(.*)$  [NC] 
+RewriteCond %{HTTP_HOST} !192.168.1.131 [NC] 
+RewriteCond %{HTTP_HOST} !192.168.1.141 [NC] 
+RewriteCond %{HTTP_HOST} !192.168.1.151 [NC]
+RewriteCond %{REQUEST_FILENAME} !\.(css|js|png|jpg|less|jpeg|bmp|gif|woff2|ttf|woff)$ [NC]
+RewriteCond %{REQUEST_URI} !/admin/map_tracking.php|/admin/ajax_getdriver_detail.php|ajax_getdirver_detail.php|trip_tracking.php|trip_tracking_multi_delivery.php|webservice_shark.php|webservice_shark_1.php|resizeImg.php|invoice_deliverall.php|invoice.php|ajax_estimate_by_vehicle_type.php|cx-invoice_deliverall.php|get_reverse_geocoding_file_content.php|/admin/server_details.php [NC]
+RewriteRule ^(.*)$ https://chegou.site%{REQUEST_URI} [L,R=301] 
+
+# Force No SSL on Socket cluster dependent pages
+RewriteCond %{HTTPS} on [NC]
+RewriteCond %{HTTP_HOST} !192.168.1.131 [NC] 
+RewriteCond %{HTTP_HOST} !192.168.1.141 [NC] 
+RewriteCond %{HTTP_HOST} !192.168.1.151 [NC]
+RewriteCond %{REQUEST_URI} /admin/map_tracking.php|/admin/ajax_getdriver_detail.php|ajax_getdirver_detail.php|trip_tracking.php|trip_tracking_multi_delivery.php|invoice_deliverall.php|invoice.php|cx-invoice_deliverall.php|/admin/server_details.php [NC]
+RewriteRule ^(.*)$ http://www.chegou.site%{REQUEST_URI} [L,R=301]
+
+#get_reverse_geocoding_file_content.php file is included only in first block bc some are http and some are https..
+
+<Files *.tpl>
+	Deny from all
+</Files>
+<Files *.inc>
+	Deny from all
+</Files>
+RewriteRule ^help-center$ help_center.php
+RewriteRule ^login-new$ login_new.php
+
+RewriteRule ^profile$ profile.php
+RewriteRule ^dashboard$ dashboard.php
+RewriteRule ^vehicle$ vehicle.php
+#RewriteRule ^vehicle/(.*)$ vehicle.php?iDriverId=$1
+
+RewriteRule ^vehicle-add$ vehicle_add_form.php
+RewriteRule ^driver-trip$ driver_trip.php
+RewriteRule ^provider-job$ driver_trip.php
+RewriteRule ^driver-order$ driver_order.php
+RewriteRule ^payment-request$ payment_request.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^driverlist$ driver.php
+RewriteRule ^foodcategorylist$ food_menu.php
+RewriteRule ^menuitems$ menuitems.php
+RewriteRule ^company-order$ company_order.php
+RewriteRule ^processing-orders$ processing_orders.php
+RewriteRule ^fare-estimate$ fareestimate.php
+RewriteRule ^providerlist$ driver.php
+RewriteRule ^company-trip$ company_trip.php
+RewriteRule ^profile-rider$ profile_rider.php
+RewriteRule ^profile-user$ profile_rider.php
+RewriteRule ^mytrip$ mytrip.php
+RewriteRule ^myorder$ myorder.php
+RewriteRule ^driver_wallet$ rider_wallet.php?type=Driver
+RewriteRule ^provider_images$ provider_images.php
+RewriteRule ^rider_wallet$ rider_wallet.php?type=Rider
+RewriteRule ^provider_wallet$ rider_wallet.php?type=Driver
+RewriteRule ^user_wallet$ rider_wallet.php?type=Rider
+RewriteRule ^rider-login$ login_new.php?action=rider
+RewriteRule ^driver-login$ login_new.php?action=driver
+RewriteRule ^user-login$ login_new.php?action=rider
+RewriteRule ^provider-login$ login_new.php?action=driver
+RewriteRule ^company-login$ login_new.php?action=driver&iscompany=1
+RewriteRule ^organization-login$ organization_login.php?action=organization
+RewriteRule ^organization-profile$ organization-profile.php
+RewriteRule ^organization-user$ my_users.php
+
+RewriteRule ^rider$ login_new.php?action=rider
+RewriteRule ^driver$ login_new.php?action=driver
+#RewriteRule ^facebook$ fbconnect.php
+RewriteRule ^facebook$ fb-login/fbconfig.php
+RewriteRule ^facebook/(.*)$ fb-login/fbconfig.php?userType=$1
+RewriteRule ^facebook-rider/(.*)$ fb-login/fbconfig-rider.php?userType=$1
+RewriteRule ^twitter/(.*)$ twconnect.php?userType=$1
+RewriteRule ^google/(.*)$ gpconnect.php?userType=$1
+#RewriteRule ^google-rider/(.*)$ gpconnect_user.php?userType=$1
+RewriteRule ^linkedin/(.*)$ linkedin-login/auth.php?userType=$1
+RewriteRule ^linkedin-rider/(.*)$ linkedin-login/auth-rider.php?userType=$1
+
+RewriteRule ^hotel$ admin/index.php?userType=hotel
+RewriteRule ^billingpanel$ admin/index.php?userType=billing
+RewriteRule ^sign-in$ sign-in.php
+RewriteRule ^sign-up-rider$ sign-up_rider.php
+RewriteRule ^sign-up-user$ sign-up_rider.php
+RewriteRule ^sign-up-restaurant$ sign-up-restaurant.php
+RewriteRule ^sign-up-organization$ sign-up-organization.php
+RewriteRule ^sign-up$ sign-up.php
+RewriteRule ^about-us$ about.php
+RewriteRule ^trust-safety-insurance$ trust_safty_insurance.php
+RewriteRule ^safety-measures$ safety_measures.php
+
+RewriteRule ^how-it-works$ how_it_works.php
+RewriteRule ^terms-condition$ terms_condition.php
+RewriteRule ^faq$ faq.php
+RewriteRule ^about$ about.php
+RewriteRule ^contact-us$ contact_us.php
+RewriteRule ^help-center$ help_center.php
+RewriteRule ^legal$ legal.php
+RewriteRule ^dummy$ dummy_data_insert.php
+RewriteRule ^settings$ settings.php
+RewriteRule ^privacy-policy$ privacy-policy.php
+RewriteRule ^organization-trip$ organization_trip.php
+RewriteRule ^users-trip$ organization_users_trip.php
+RewriteRule ^maintanance maintanance.php
+
+RewriteRule ^cj-sign-in$ sign-in.php
+RewriteRule ^cj-user-login$ login_new.php?action=rider
+RewriteRule ^cj-rider-login$ login_new.php?action=rider
+RewriteRule ^cj-provider-login$ login_new.php?action=driver
+RewriteRule ^cj-driver-login$ login_new.php?action=driver
+RewriteRule ^cj-company-login$ login_new.php?action=driver&iscompany=1
+RewriteRule ^cj-organization-login$ organization_login.php?action=organization
+RewriteRule ^cj-sign-up$ sign-up.php
+RewriteRule ^cj-sign-up-user$ sign-up_rider.php
+RewriteRule ^cj-sign-up-rider$ sign-up_rider.php
+RewriteRule ^cj-sign-up-restaurant$ sign-up-restaurant.php
+RewriteRule ^cj-sign-up-organization$ sign-up-organization.php
+RewriteRule ^cj-SignUp$ sign-up.php
+
+
+RewriteRule ^order-items$ user_info.php
+RewriteRule ^store-listing$ restaurant_listing.php
+RewriteRule ^store-items$ restaurant_menu.php
+RewriteRule ^store-order$ restaurant_place-order.php
+RewriteRule ^user-order-information$ customer_info.php
+
+
+RewriteRule ^userbooking$ userbooking.php?userType1=rider
+
+RewriteRule ^companybooking$ userbooking.php?userType1=company
+
+RewriteRule ^adminbooking$ userbooking.php?userType1=admin
+#RewriteRule ^adminbooking/(.*)$ userbooking.php?userType1=admin&booking_id=$1 [QSA]
+
+RewriteRule ^SignUp sign-up.php
+RewriteRule ^my-account my-account.php
+RewriteRule ^Logout logout.php
+RewriteRule ^Organization-Logout organization-logout.php
+RewriteRule ^Page-Not-Found 404-error.php
+RewriteRule ^Site-Maintenance-Page site_maintenance.php
+
+###############################################################################
+
+#RewriteRule ^cx-sign-in$ cx-sign-in.php
+#RewriteRule ^cx-sign-up$ cx-sign-up.php
+
+#RewriteRule ^processing-orders$ cx-processing_orders.php
+
+#RewriteRule ^companybooking$ cx-userbooking.php?userType1=company
+#RewriteRule ^companybooking-ride$ cx-userbooking.php?userType1=company&navigatedPage=ride
+#RewriteRule ^companybooking-delivery$ cx-userbooking.php?userType1=company&navigatedPage=Delivery
+#RewriteRule ^companybooking-fly$ cx-userbooking.php?userType1=company&navigatedPage=Fly
+#RewriteRule ^companybooking-moto$ cx-userbooking.php?userType1=company&navigatedPage=Moto
+
+#RewriteRule ^userbooking$ cx-userbooking.php?userType1=rider
+#RewriteRule ^userbooking-ride$ cx-userbooking.php?userType1=rider&navigatedPage=ride
+#RewriteRule ^userbooking-delivery$ cx-userbooking.php?userType1=rider&navigatedPage=Delivery
+#RewriteRule ^userbooking-fly$ cx-userbooking.php?userType1=rider&navigatedPage=Fly
+#RewriteRule ^userbooking-moto$ cx-userbooking.php?userType1=rider&navigatedPage=Moto
+
+RewriteRule ^companybooking-ride$ userbooking.php?userType1=company&navigatedPage=ride
+RewriteRule ^companybooking-delivery$ userbooking.php?userType1=company&navigatedPage=Delivery
+RewriteRule ^companybooking-fly$ userbooking.php?userType1=company&navigatedPage=Fly
+RewriteRule ^companybooking-moto$ userbooking.php?userType1=company&navigatedPage=Moto
+
+RewriteRule ^userbooking-ride$ userbooking.php?userType1=rider&navigatedPage=ride
+RewriteRule ^userbooking-delivery$ userbooking.php?userType1=rider&navigatedPage=Delivery
+RewriteRule ^userbooking-fly$ userbooking.php?userType1=rider&navigatedPage=Fly
+RewriteRule ^userbooking-moto$ userbooking.php?userType1=rider&navigatedPage=Moto
+
+RewriteRule ^company-fare-estimate$ cx-fareestimate.php?userType1=company
+RewriteRule ^user-fare-estimate$ cx-fareestimate.php?userType1=rider
+
+RewriteRule ^earn$ cx-earn.php
+RewriteRule ^corporate-ride$ cx-business.php
+RewriteRule ^taxi$ cx-taxi.php
+RewriteRule ^food$ cx-food.php
+RewriteRule ^delivery$ cx-delivery.php
+RewriteRule ^moto$ cx-moto.php
+RewriteRule ^fly$ cx-fly.php
+RewriteRule ^about$ cx-about.php
+RewriteRule ^grocery$ cx-grocery.php
+RewriteRule ^otherservices$ cx-otherservices.php
+
+#RewriteRule ^sign-in.php$ cx-sign-in
+
+ErrorDocument 404 https://www.chegou.site/Page-Not-Found
+
+<IfModule mod_rewrite.c>
+ #RewriteEngine on
+ #RewriteCond %{REMOTE_ADDR} !^123\.456\.789\.000
+ #RewriteCond %{REQUEST_URI} !maintenance.html$ [NC]
+ #RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif|jpg) [NC]
+ #RewriteRule .* maintenance.html [R=302,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+#RewriteEngine on
+#RewriteCond %{REMOTE_ADDR} !^123\.456\.789\.000
+#RewriteCond %{REQUEST_URI} !1.html$ [NC]
+#RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif|jpg) [NC]
+#RewriteRule .* 1.html [R=301,L]
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php71” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php71 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 2048M
+   php_value post_max_size 900M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php72"
+   php_value upload_max_filesize 900M
+   php_flag zlib.output_compression On
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 2048M
+   php_value post_max_size 900M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php72"
+   php_value upload_max_filesize 900M
+   php_flag zlib.output_compression On
+</IfModule>
+# END cPanel-generated php ini directives, do not edit

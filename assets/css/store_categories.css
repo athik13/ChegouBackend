@@ -1,0 +1,81 @@
+/* header {
+    background-color: #239707;
+    color: #fff;
+    z-index: 22;
+}
+.header-right ul li a.unic-btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+ul.store-category-listing li {
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.rest-menu-left{
+    width: 100%;
+}
+.search_div {
+    color: #fff!important;
+    }
+    .location-element select{
+        color: #fff;
+    }
+    .location-element span{
+        color: #fff; 
+    }
+    .rest-menu-main, .product-list-right, .leftbar-filter {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .more-stores {
+        height: calc(100% - 8px);
+        display: table !important;
+        width: 100%;
+    }
+    .more-stores span {
+        font-size: 48px;
+        vertical-align: middle;
+        width: 100%;
+        display: table-cell;
+        text-align: center;
+    } */
+    /* .rest-menu-main, .product-list-right, .leftbar-filter {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .full-width {
+        width: 100%;
+    }
+    .leftbar-filter.fixed_ele {
+        top: 73px;
+    }
+    ul.store-category-listing li {
+        width: 33.33%;
+    }
+    .restaurant-section-title {
+        text-align: center;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #ffffff;
+        padding: 70px 19%;
+        background-color: #219201;
+        float: left;
+        width: 100%;
+    }
+    .restaurant-section-title a {
+        color: #ffffff;
+    }
+    .restaurant-section-title img {
+        width: 28px;
+        height: 28px;
+    }
+    .restaurant-section-title a {
+        color: #ffffff;
+    }
+    .restaurant-section {
+        background-color: #219201;
+        margin: 0;
+        float: left;
+        width: 100%;
+    } */

@@ -1,0 +1,16 @@
+{
+    "name": "admin/library",
+    "require": {
+        "php": ">=5.5.38",
+        "illuminate/database": "5.2.*",
+        "phpoffice/phpexcel": "^1.8",
+        "illuminate/pagination": "5.2.*",
+        "illuminate/http": "5.2.*",
+        "illuminate/events": "5.2.*"
+    },
+    "autoload": {
+    	"psr-4": { 
+	        "Models\\": "models/"
+	    }
+	}
+}

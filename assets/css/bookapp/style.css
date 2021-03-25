@@ -1,0 +1,387 @@
+/****booking-passenger-page**********/
+.booking-passenger { padding:0px;}
+.booking-passenger-page{margin:0px; padding:0px; float:left; width:100%;}
+.booking-passenger-page-left{margin:0px; padding:0px; float:left; width:35%;}
+
+.booking-passenger-page-box1{ margin:0 0 20px; padding:0px; float:left; width:100%; position:relative;}
+.booking-passenger-page-box1-tab{ margin:0 0 10px 0; padding:0px; float:left; width:100%;}
+.booking-passenger-page-box1-tab ul{ margin:0px; padding:0px; float:left; width:100%;}
+.booking-passenger-page-box1-tab ul li{ margin:0px; padding:0px; float:left; width:50%;}
+.booking-passenger-page-box1-tab ul li a{ margin:0px; padding:0px; float:left; width:100%; font-size:18px; color:#808080; width:190px; height:46px; line-height:43px; font-weight:600; text-align:center;}
+/*.booking-passenger-page-box1-tab ul li a:hover{color:#FFFFFF; background:url(../img/tab-img.png) no-repeat;}*/
+.booking-passenger-page-box1-tab ul li .active{color:#FFFFFF; background:url(../../img/tab-img.png) no-repeat; background-size:98% 99%;}
+
+.booking-passenger-tab1{ margin:0px; padding:0px; float:left; width:98%;/*height: 500px; overflow: auto;*/}
+.service-type{ margin:20px 0 0; padding:0px; float:left; width:100%;}
+.service-type h3{ margin:0px; padding:0px; float:left; width:100%; color:#836107; font-size:18px; font-weight:600;}
+.radio-but{ margin:15px 0 0; padding:0; float:left; width:100%;}
+.radio-but b{ margin:0 15px 0 0; padding:0px; float:left; color:#333333; font-weight:normal; width:33%;}
+.radio-but b label{ font-weight:normal; font-size:18px;}
+.radio-but b input[type="checkbox"] {display:none;}
+.radio-but b input[type="checkbox"] + label {color:#333; font-size:14px; font-weight:bold;}
+.radio-but b input[type="checkbox"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:0px 4px 0 0;
+    vertical-align:middle;
+    background:#000;
+    border-radius:3px;
+    cursor:pointer;
+    content:"";
+    box-shadow: inset 0px 2px 3px 0px rgba(34, 41, 122, 0.3), 0px 1px 0px 0px rgba(116, 123, 175, 0.8);
+}
+.radio-but b input[type="checkbox"]:checked + label::before {
+    content: "\2713";
+    color: #FFDD94;
+    font-size: 18px;
+    font-weight:normal;
+    text-align: center;
+    line-height: 18px;
+}
+.radio-but b input[type="radio"] {display:none;} 
+.radio-but b input[type="radio"] + label {color:#333; font-size:18px;}
+.radio-but b input[type="radio"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:0 10px 0 0;
+    vertical-align:middle;
+    background: #fff;
+    border-radius: 10px;
+    cursor:pointer;
+    content:"";
+	border:1px solid #cacaca;
+	font-weight:normal;
+}
+.radio-but b input[type="radio"]:checked + label::before {
+    color:#413004;
+    font-size:30px;
+    text-align:center;
+	background-image:url(../../img/radio-img.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	font-weight:normal;
+}
+
+.pickup-location{ margin:25px 0 0; padding:0px; float:left; width:100%;}
+.pickup-location h3{ margin:0 0 10px; padding:0px; float:left; width:100%; color:#836107; font-size:18px; font-weight:600;}
+.pickup-location span{ margin:0px; padding:0px; float:left; width:100%;}
+.pickup-location span input{ margin:0px; padding:8px 0; float:left; width:100%; font-size:14px; color:#989898; border-bottom:1px solid #cccccc;}
+
+.add-delivery-details{ margin:35px 0 0; padding:0px; float:left; width:100%;}
+.add-delivery-details h3{ margin:0 0 10px; padding:0px; float:left; width:100%; color:#836107; font-size:18px; font-weight:600;}
+.add-delivery-details span{ margin:0 0 15px; padding:0px; float:left; width:100%;}
+.add-delivery-details span .select-box{ margin:0px; padding:0px; float:right;}
+.add-delivery-details span .se-in{ margin:0px; padding:0px; float:left;  position: relative;}
+.add-delivery-details span .select-wrapper{ float:left; display: inline-block; border:none; background:url("../img/arrow-down.jpg") no-repeat scroll right 17px; cursor: pointer;
+position:relative;}
+.add-delivery-details span .select-wrapper em{ width:100%; font-style:normal;}
+.add-delivery-details span .select-wrapper, .select-wrapper select{ border:none; border-bottom:1px solid #cccccc; padding:10px 0 10px 0; margin:0px; width:100%; font-size:15px;}
+.add-delivery-details span .select-wrapper:hover{ background:url("../img/arrow-down.jpg") no-repeat scroll right 17px; }
+.add-delivery-details span .select-wrapper .holder{ display: block; margin:1px 18px 0 0; white-space: nowrap; overflow: hidden; cursor: pointer; position: relative; 
+z-index:0; color:#c0c0c0; font-size:15px; width:auto!important;}
+.add-delivery-details span .select-wrapper select{ margin:0; padding:0px; position: absolute; z-index: 2; cursor: pointer; outline: none; opacity: 0; _noFocusLine: expression(this.hideFocus=true);  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0);-khtml-opacity: 0; -moz-opacity:0; left:0; width:100%; color:#000; height:auto;}
+.add-delivery-details span .select-wrapper select option{ margin:0; padding:5px;}
+.add-delivery-details span textarea{ margin:0px; padding:0px; float:left; width:100%; color:#919090; font-size:15px; border:none; border-bottom:1px solid #cccccc; height:80px;}
+.add-delivery-details span .weight{ margin:0px; padding:10px 0; float:left; width:48%; color:#919090; font-size:15px; border:none; border-bottom:1px solid #cccccc;}
+.add-delivery-details span .quantity{ margin:0px; padding:10px 0; float:right; width:48%; color:#919090; font-size:15px; border:none; border-bottom:1px solid #cccccc;}
+.add-delivery-details span a{ margin:20px 0 0; padding:0 0 0 20px; float:right; color:#413004; font-size:15px; font-weight:600; background:url(../img/plush.jpg) no-repeat scroll left 7px;}
+.add-delivery-details span a:hover{ color:#836107; background:url(../img/plush-hover.jpg) no-repeat scroll left 7px;}
+.add-delivery-details span .delivery-submit{ margin:10px 0 0; padding:5px 10px; float:left; background:#413004; color:#FFFFFF; font-size:20px; font-weight:600;}
+.add-delivery-details span .delivery-submit:hover{ background:#836107; color:#FFFFFF;}
+
+.vehicle-type{ margin:40px 0 10px; padding:0px; float:left; width:100%;}
+.vehicle-type h3{ margin:0px; padding:0px; float:left; width:100%; color:#836107; font-size:18px; font-weight:600;}
+.radio-vehicle-type{ margin:15px 0 0; padding:0; float:left; width:100%;}
+.radio-vehicle-type b{ margin:0px; padding:0px; float:left; color:#333333; font-weight:normal; width:100%;}
+.radio-vehicle-type b label{ font-weight:normal; font-size:18px;}
+.radio-vehicle-type b label em{ margin:0 10px 0 0; padding:0px;}
+.radio-vehicle-type b input[type="checkbox"] {display:none;}
+.radio-vehicle-type b input[type="checkbox"] + label {color:#333; font-size:13px; font-weight:bold;}
+.radio-vehicle-type b input[type="checkbox"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:0px 4px 0 0;
+    vertical-align:middle;
+    background:#000;
+    border-radius:3px;
+    cursor:pointer;
+    content:"";
+    box-shadow: inset 0px 2px 3px 0px rgba(34, 41, 122, 0.3), 0px 1px 0px 0px rgba(116, 123, 175, 0.8);
+}
+.radio-vehicle-type b input[type="checkbox"]:checked + label::before {
+    content: "\2713";
+    color: #FFDD94;
+    font-size: 18px;
+    font-weight:normal;
+    text-align: center;
+    line-height: 18px;
+}
+.radio-vehicle-type b input[type="radio"] {display:none;} 
+.radio-vehicle-type b input[type="radio"] + label {color:#333; font-size:13px;}
+.radio-vehicle-type b input[type="radio"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:0 10px 0 0;
+    vertical-align:middle;
+    background: #fff;
+    border-radius: 10px;
+    cursor:pointer;
+    content:"";
+	border:1px solid #cacaca;
+	font-weight:normal;
+}
+.radio-vehicle-type b input[type="radio"]:checked + label::before {
+    color:#413004;
+    font-size:30px;
+    text-align:center;
+	background-image:url(../../img/radio-img.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	font-weight:normal;
+}
+
+.service-pickup-type{ margin:30px 0 0; padding:0px; float:left; width:100%;}
+.service-pickup-type h3{ margin:0px; padding:0px; float:left; width:100%; color:#836107; font-size:18px; font-weight:600;}
+.radio-but-type{ margin:15px 0 0; padding:0; float:left; width:100%;}
+.radio-but-type b{ margin:0 15px 0 0; padding:0px; float:left; color:#333333; font-weight:normal; width:42%;}
+.radio-but-type b label{ font-weight:normal; font-size:18px;}
+.radio-but-type b input[type="checkbox"] {display:none;}
+.radio-but-type b input[type="checkbox"] + label {color:#333; font-size:14px; font-weight:bold;}
+.radio-but-type b input[type="checkbox"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:0px 4px 0 0;
+    vertical-align:middle;
+    background:#000;
+    border-radius:3px;
+    cursor:pointer;
+    content:"";
+    box-shadow: inset 0px 2px 3px 0px rgba(34, 41, 122, 0.3), 0px 1px 0px 0px rgba(116, 123, 175, 0.8);
+}
+.radio-but-type b input[type="checkbox"]:checked + label::before {
+    content: "\2713";
+    color: #FFDD94;
+    font-size: 18px;
+    font-weight:normal;
+    text-align: center;
+    line-height: 18px;
+}
+.radio-but-type b input[type="radio"] {display:none;} 
+.radio-but-type b input[type="radio"] + label {color:#333; font-size:17px;}
+.radio-but-type b input[type="radio"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:0 10px 0 0;
+    vertical-align:middle;
+    background: #fff;
+    border-radius: 10px;
+    cursor:pointer;
+    content:"";
+	border:1px solid #cacaca;
+	font-weight:normal;
+}
+.radio-but-type b input[type="radio"]:checked + label::before {
+    color:#413004;
+    font-size:30px;
+    text-align:center;
+	background-image:url(../../img/radio-img.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	font-weight:normal;
+}
+
+.trip-box-friend-count .fare-estimate{margin:0px; padding:0px; float:left; width:100%; text-align:center;}
+.trip-box-friend-count .fare-estimate a{margin:0px; padding:7px 14px; text-align:center; font-size:20px; background:#413004; color:#FFFFFF; display:inline-table; border:none;}
+.trip-box-friend-count .fare-estimate a:hover{background:#836107; color:#FFFFFF;}
+
+.booking-passenger-fare-estimate .modal-header{padding:10px 15px;}
+.booking-passenger-fare-estimate .modal-body{padding:15px;}
+.booking-passenger-fare-estimate .close{opacity:0.5; font-size:25px;} 
+.booking-passenger-fare-estimate h4{color:#836107; font-size:25px;}
+.booking-passenger-fare-estimate ul li{font-size:15px; margin: 0; padding:0 0 7px;}
+.booking-passenger-fare-estimate ul li span{ margin:0px; padding:0px; width:180px; display:inline-block;}
+.booking-passenger-fare-estimate ul li b{color:#413004;}
+.booking-passenger-fare-estimate label b{margin:0px; padding:0px; width:180px; display:inline-block; font-size:16px;}
+.booking-passenger-fare-estimate label em{color:#413004; font-size:16px; font-weight:600;}
+
+.service-pickup-type-span{ margin:25px 0 0; padding:0px; float:left; width:100%; text-align:center;}
+.service-pickup-type-span a{ margin:0px; padding:10px 0; float:left; width:100%; text-align:center; font-size:20px; background:#413004; color:#FFFFFF;}
+.service-pickup-type-span a:hover{ background:#836107; color:#FFFFFF;}
+
+.delivery-details{ margin:30px 0 0; padding:0px; float:left; width:100%;}
+.delivery-details h3{ margin:0 0 15px; padding:0px; float:left; width:100%; color:#836107; font-size:18px; font-weight:600;}
+.delivery-details span a{ margin:20px 0 0; padding:0 0 0 20px; float:right; color:#413004; font-size:15px; font-weight:600; background:url(../img/plush.jpg) no-repeat scroll left 7px;}
+.delivery-details span a:hover{ color:#836107; background:url(../img/plush-hover.jpg) no-repeat scroll left 7px;}
+.delivery-details .delivery-details-box{ margin:0 0 15px; padding:15px 0 0; float:left; width:100%; border:1px solid #d2d2d2;}
+.delivery-details .delivery-details-box h4{ margin:0 0 10px 10px; padding:0px; float:left; width:95%; font-size:17px; color:#050505; font-weight:600;}
+.delivery-details .delivery-details-box p{ margin:0 0 0 10px; padding:0px; float:left; width:95%; font-size:15px; color:#000000;}
+.delivery-details .delivery-details-box b{ margin:15px 0 0; padding:0px; float:left; width:100%; border-top:1px solid #d2d2d2;}
+.delivery-details .delivery-details-box b a{ margin:0px; padding:8px 0; float:left; width:50%; text-align:center; font-size:15px; color:#ed7401; text-transform:uppercase;}
+.delivery-details .delivery-details-box b a:hover{ color:#836107;}
+.delivery-details .delivery-details-box b .edit-icon{ background:url(../img/edit-icon1.jpg) no-repeat scroll left 30% top 50%;}
+.delivery-details .delivery-details-box b .edit-icon:hover{ background:url(../img/edit-icon1-hover.jpg) no-repeat scroll left 30% top 50%;}
+.delivery-details .delivery-details-box b .delete-icon{ background:url(../img/delete-icon.jpg) no-repeat scroll left 25% top 50%; border-left:1px solid #d2d2d2;}
+.delivery-details .delivery-details-box b .delete-icon:hover{ background:url(../img/delete-icon-hover.jpg) no-repeat scroll left 25% top 50%;}
+
+.booking-passenger-tab2{ margin:0px; padding:0xp; float:left; width:100%; display:none;}
+
+.booking-passenger-tab2 .pickup-time{ margin:20px 0 0; padding:0px; float:left; width:100%;}
+.booking-passenger-tab2 .pickup-time span{ margin:5px 0; padding:0px; float:left; width:100%; color:#666666l; font-size:17px;}
+.booking-passenger-tab2 .pickup-time span b{ margin:0px; padding:0px; float:left; width:150px; color:#2d2d2d;}
+
+.booking-passenger-tab2 .ride-along{ margin:15px 0 0; padding:0px; float:left; width:100%;}
+.booking-passenger-tab2 .ride-along span{ margin:0; padding:0px; float:left; width:100%; font-size:18px; font-weight:600;}
+.booking-passenger-tab2 .ride-along span .checkbox-n{ margin:0 10px 0 0; float:left;}
+.booking-passenger-tab2 .ride-along span .checkbox-n label{ margin:0px;}
+.booking-passenger-tab2 .ride-along span .checkbox-n input[type="checkbox"] + label::before{ background:url(../img/cheak-box-img1.jpg) no-repeat scroll left 0px; width:24px; height:24px;}
+.booking-passenger-tab2 .ride-along span .checkbox-n input[type="checkbox"]:checked + label::before{ color:#fe831e; line-height:16px;}
+
+.booking-passenger-tab2 .pickup-location1 span{ margin:0px;}
+.booking-passenger-tab2 .pickup-location2{ margin:30px 0 0;}
+.booking-passenger-tab2 .pickup-location2 span{ margin:0 0 25px; padding:0px; float:left; width:100%; text-align:center;}
+.booking-passenger-tab2 .pickup-location2 span .cvv{ margin:0px; padding:8px 0; float:left; width:40%; font-size:14px; color:#989898; border-bottom:1px solid #cccccc;}
+.booking-passenger-tab2 .pickup-location2 span .mm{ margin:0 30px; padding:8px 0; float:left; width:15%; font-size:14px; color:#989898; border-bottom:1px solid #cccccc;
+text-align:center;}
+.booking-passenger-tab2 .pickup-location2 span .yyy{ margin:0px; padding:8px 0; float:left; width:15%; font-size:14px; color:#989898; border-bottom:1px solid #cccccc;
+text-align:center;}
+.booking-passenger-tab2 .pickup-location2 span a{ margin:15px 0 0; padding:10px 0; float:left; width:100%; text-align:center; font-size:20px; background:#413004; color:#FFFFFF;}
+.booking-passenger-tab2 .pickup-location2 span a:hover{ background:#836107; color:#FFFFFF;}
+.booking-passenger-tab2 .radio-but-type b{ margin:0px;}
+
+.pickup-location1 b.promocode-btn002{ margin:10px 0 0; padding:0px; float:left; width:100%;}
+.pickup-location1 b.promocode-btn002 .submit{ margin:0px; padding:6px 10px; background:#333333; color:#FFFFFF;}
+
+.pickup-location1 b.promocode-btn002{ margin:10px 0 0; padding:0px; float:left; width:100%;}
+.pickup-location1 b.promocode-btn002 .submit{ margin:0px; padding:8px 10px; background:#333333; color:#FFFFFF; float:left;}
+.pickup-location1 b.promocode-btn002 .submit:hover{ background:#836107;}
+.pickup-location2 b.card-btn002{ margin:0 0 10px; padding:0px; float:left; width:100%;}
+.pickup-location2 b.card-btn002 .submit{ margin:0px; padding:8px 10px; background:#333333; color:#FFFFFF; float:left;}
+.pickup-location2 b.card-btn002 .submit:hover{ background:#836107;}
+.cardno-main-detail002 p.cardno-detail002{ margin:0px; padding:0px; float:left; width:100%;}
+.cardno-main-detail002 p.cardno-detail002 .change-card002{ color:#413004;}
+.cardno-main-detail002 p.cardno-detail002 .change-card002:hover{ color:#836107;}
+
+.booking-passenger-tab2 .extra-services{ margin:20px 0 0; padding:0px; float:left; width:100%;}
+.booking-passenger-tab2 .extra-services h3{ margin:0 0 10px; padding:0px; float:left; width:100%; color:#836107; font-size:18px; font-weight:600;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox{ margin:0px; padding:0px; float:left; width:100%;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span{ margin:0px; padding:10px 0; float:left; width:100%; border-bottom:1px solid #e4e4e4;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span b{ margin:0px; padding:0px; float:left; width:70%; font-size:16px; color:#181818; font-weight:600;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span b p{ margin:0px; padding:0px; float:left; width:100%; color:#fe831e; font-size:13px; font-weight:normal;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span .select-wrapper{ float:left; display: inline-block; border:none; background:url("../img/arrow-red.jpg") no-repeat scroll right 17px; cursor: pointer; position:relative;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span .select-wrapper em{ width:100%; font-style:normal;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span .select-wrapper, .select-wrapper select{border:1px solid #cccccc; padding:6px 8px; margin:3px 0 0; 
+width:100px; font-size:15px; float:right;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span .select-wrapper:hover{ background:url("../img/arrow-red.jpg") no-repeat scroll right 17px;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span .select-wrapper .holder{ display: block; margin:0; white-space: nowrap; overflow: hidden; cursor: pointer; position: relative; z-index:0; color:#000; font-size:18px; width:auto!important;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span .select-wrapper select{ margin:0; padding:0px; position:absolute; z-index:2; cursor:pointer; outline: none; opacity: 0; _noFocusLine: expression(this.hideFocus=true);  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0);-khtml-opacity: 0; -moz-opacity:0; left:0; width:100%; color:#000; height:auto;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox span .select-wrapper select option{ margin:0; padding:5px;}
+
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n{ margin:11px 0 0; padding:0px; float:right; width:24px;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n input[type="checkbox"] {display:none;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n input[type="checkbox"] + label {
+    color:#59c859;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+ 
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n input[type="checkbox"] + label::before {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin:0;
+    vertical-align:middle;
+	background:#f3f3f3;
+    cursor:pointer;
+    content:"";
+	padding:3px;
+	border:1px solid #b5b5b5;
+	border-radius:0px;
+}
+ 
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n input[type="checkbox"]:checked + label::before { 
+    content: "\2713";
+    color: #fe831e;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height:18px;
+	border:1px solid #c1c1c1;
+}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n input[type="radio"] {display:none;}
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n input[type="radio"] + label {
+    color:#59c859;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+ 
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n input[type="radio"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background: #3C4B57;
+    border-radius: 10px;
+    cursor:pointer;
+    content:"";
+    box-shadow:inset 0px 2px 3px 0px rgba(34, 41, 122, 0.3), 0px 1px 0px 0px rgba(116, 123, 175, 0.8);
+}
+
+.booking-passenger-tab2 .extra-services .extra-services-cheakbox .checkbox-n input[type="radio"]:checked + label::before {content:"\2022";color:#59c859;font-size:30px;text-align:center;line-height:15px;}
+.booking-passenger-page-right{margin:0px; padding:0px; float:right; width:65%;}
+.pac-container {z-index: 1040;}
+strong.dateSchedule input{border:1px solid #cfcfcf; float:left; padding:10px; width:100%; font-size:14px;}
+.driver-count { background:#f5d60f; border:3px solid white; border-radius:10px; box-shadow:0 7px 10px -6px darkgrey; display:flex; flex-wrap:wrap; font-size:1.2em;list-style:outside none none; opacity:0.9; overflow:hidden; padding-left:0; position:absolute; bottom:20%; left:57%; z-index:1;}
+.driver-count li:nth-child(1), .driver-count li:nth-child(2) {background: #e4cb0f none repeat scroll 0 0 !important;}
+.driver-count li {display: flex;float: left;text-align: center; padding: 8px;}
+#num-driver, #km {font-size: 3em !important;font-weight: 800;line-height: 1.1;}
+.driver-count li:nth-child(2) span {line-height: 18px;overflow-wrap: break-word;}
+.driver-count li span{display: block;float: left;margin: auto;text-decoration: none;}
+.li_other {width:5.5em;}
+
+.booking-passenger h4.modal-title{color:#836107; font-size:20px; font-weight:600;}
+.booking-passenger .form-horizontal .form-group{ margin:5px 0 20px; padding:0px;}
+.booking-passenger .form-horizontal .form-group label{ margin:5px 0 0; padding:0px; width:160px; font-weight:normal; font-size:15px;}
+.booking-passenger .form-horizontal .btn-primary{ background:#413004; border:none;}
+.booking-passenger .form-horizontal .btn-primary:hover{ background:#836107;}
+
+/***************/
+/*.booking-passenger-page-box1{ overflow:hidden;}*/
+.requesting{ margin:px; padding:0px; padding:0px; float:left; width:100%; background:rgba(0, 0, 0, 0.9) none repeat scroll 0 0; position:absolute; top:65px; bottom:0; left:0; right:0; height:100%; display:none;}
+.requesting h3{ margin:0 0 20px; padding:0px; padding:0px; float:left; width:100%; font-size:20px; color:#FFFFFF; font-weight:600;}
+.requesting h3 b{ margin:15px 0 0 15px; padding:0px; float:left; font-weight:600;}
+.loding-img{ margin:0px; padding:0px; padding:0px; float:left; width:100%;}
+.loding-img .loader {height:4px; width:100%; position:relative; overflow:hidden; background-color:#152924;}
+.loding-img .loader:before{
+  display:block;
+  position:absolute;
+  content:"";
+  left:-200px;
+  width:200px;
+  height:4px;
+  background-color:#f87900;
+  animation:loading 2s linear infinite;
+}
+@keyframes loading {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+.requesting span{margin:0px; padding:0px; float:left; width:100%; text-align:center; position:absolute; bottom:15%; left:0; right:0;}
+.addDelLoc001 .del-cancel{margin-left:15px!important;}
+.reqBtn001 a.back001{ width:30%!important;}
+.reqBtn001 a.request001{ width:60%!important; margin-left:10px!important;}
+.has-error22 input {border: 1px solid #DB0D00 !important;}
+.remove-events001 { pointer-events: none; }

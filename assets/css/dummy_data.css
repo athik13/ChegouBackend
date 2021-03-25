@@ -1,0 +1,148 @@
+#main-uber-page {
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+	background: #FFFFFF;
+}
+.page-contant {
+    margin: 65px 0 0;
+    padding: 0 0 60px;
+    float: left;
+    width: 100%;
+    background: none;
+    position: relative;
+    min-height: 500px;
+}
+.page-contant-inner {
+    margin: 40px auto 0;
+    padding: 0px 15px;
+    max-width: 902px;
+}
+.page-contant-inner h2 {
+    color: #44ac00;
+}
+.header-page {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    font-size: 45px;
+    text-transform: capitalize;
+    position: relative;
+}
+.header-page:before {
+    bottom: -5px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 40px;
+    float: left;
+}
+.header-page:before {
+    background: #44ac00;
+}
+.header-page p {
+    margin: 12px 0 0;
+    padding: 0 0 23px;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    text-transform: none;
+    position: relative;
+}
+.header-page p {
+    color: #44ac00;
+}
+.contact-form {
+    margin: 25px 0 0;
+    padding: 0px;
+    float: left;
+    width: 93.3%;
+}
+.contact-form b {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 49%;
+}
+.contact-form b strong {
+    margin: 0 0 15px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+strong, em {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-style: normal;
+}
+.contact-form b .contact-input {
+    border: 1px solid #d4d4d4;
+    color: #333333;
+}
+
+.contact-form b .contact-input {
+    margin: 0px;
+    padding: 0 0 0 10px;
+    float: left;
+    width: 97%;
+    height: 46px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.contact-form b:last-child {
+    width: 100%;
+}
+
+.contact-form b:nth-child(even) {
+    float: right;
+}
+.contact-form b {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 49%;
+}
+.contact-form b .submit-but {
+    background: #44ac00;
+    color: #FFFFFF;
+}
+
+.contact-form b .submit-but {
+    margin: 15px 0 0;
+    padding: 0px;
+    float: right;
+    border: none;
+    width: 172px;
+    height: 49px;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: 'maven_promedium';
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.floatLeft {
+    float: left !important;
+}
+
+.pac-container {
+    background-color: #fff;
+    position: absolute!important;
+    z-index: 1000;
+    border-radius: 2px;
+    border-top: 1px solid #d9d9d9;
+    font-family: Arial,sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}

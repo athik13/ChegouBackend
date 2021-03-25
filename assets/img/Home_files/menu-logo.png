@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Page-Not-Found</title>
+	<meta name="keywords" value="Page-Not-Found"/>
+	<meta name="description" value="Page-Not-Found"/>
+    <!-- Default Top Script and css -->
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+<meta content="" name="author" />
+
+<link rel="icon" href="assets/img/apptype/Deliverall/deliverall/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="templates/Deliverall/deliverall/assets/plugins/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="templates/Deliverall/deliverall/assets/css/sign-up.css" />
+<link rel="stylesheet" href="templates/Deliverall/deliverall/assets/plugins/magic/magic.css" />
+<link rel="stylesheet" href="assets/css/bootstrap-front.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
+<link rel="stylesheet" href="assets/plugins/Font-Awesome/css/font-awesome.css" />
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+
+    
+    <link rel="stylesheet" href="assets/css/apptype/Deliverall/deliverall/design_v5.css">
+    <link rel="stylesheet" href="assets/css/apptype/Deliverall/deliverall/style_v5.css">  
+    <link rel="stylesheet" href="assets/css/apptype/Deliverall/deliverall/style_v5_color.css">
+    <link href="assets/css/red.css" rel="alternate stylesheet" title="red" media="screen">
+    <link href="assets/css/green.css" rel="alternate stylesheet" title="green" media="screen">
+    <link href="assets/css/blue.css" rel="alternate stylesheet" title="blue" media="screen">
+    <link href="assets/css/yellow.css" rel="alternate stylesheet" title="yellow" media="screen">
+    <link href="assets/css/switcher.css" rel="stylesheet" media="screen">
+    <script src="assets/js/interface.js"></script> 
+    <script src="assets/js/styleswitch.js"></script>
+    <script src="assets/js/styleswitch-demo.js"></script>
+
+<link rel="stylesheet" href="assets/css/fa-icon.css">
+<link href="assets/css/initcarousel.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="assets/css/apptype/Deliverall/deliverall/media.css">
+<link href='//fonts.googleapis.com/css?family=Raleway:400,700,300,500,900,800,600,200,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/lang/en.css"> 
+<!-- Default js--><script>
+    var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    document.cookie = "vUserDeviceTimeZone="+timezone;
+</script>
+
+    <script>
+        $(document).ready(function(){
+            $( ".static-page ol li" ).each(function( index ) {
+                $(this).attr('data-number',index+1);
+            });
+        })
+    </script>
+
+    <style>
+        strong {
+            font-weight : bold;
+        }
+        em {
+            font-style : italic;
+        }
+        u {
+            text-decoration: underline;
+        }
+        s {
+            text-decoration: line-through;
+        }
+        .static-page ol li:before {
+            content: attr(data-number);
+            position: absolute;
+            left: 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .static-page ol li {
+            background:none;
+            position:relative;
+        }
+    </style>
+    <!-- End: Default Top Script and css-->
+    
+</head>
+<body> <div id="main-uber-page">
+    <!-- Left Menu -->
+    <span id="shadowbox" onClick="menuClose()"></span>
+<nav>
+    <ul id="listMenu">
+        <span class="desktop">
+            <div class="menu-logo">
+                <section id="navBtn" class="navBtnNew navOpen" onClick="menuClose()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+                                    <a href="index.php" class="logo-left signin"><img src="assets/img/assets/img/apptype/Deliverall/deliverall/menu-logo.png" alt=""></a>
+                    <label><a href="sign-in" class="">
+                            <i aria-hidden="true" class="fa fa-user"></i>Sign In</a></label>
+                            </div>
+            <div class="menu-left-new">
+                    <li><a href="how-it-works" class="">How it Work</a></li>
+                    <li><a href="trust-safty-insurance" class="">Trust Safety & Insurance</a></li>
+                    <li><a href="terms-condition" class="">Terms & Conditions</a></li>
+                    <li><a href="legal" class="">Legal</a></li>
+                    <li><a href="faq" class="">Faq</a></li>
+                
+                    <b>
+                        <a href="sign-up-rider" class="">Sign up to Ride</a>
+                        <a class="" href="sign-up.php">become a driver</a>
+                        <a class="" href="organization-login">BECOME AN ORGANIZATION</a></b>
+
+                
+                <div style="clear:both;"></div>
+            </div>
+        </span>
+
+        <span class="mobile">
+            <div class="menu-logo">
+                <section id="navBtn" class="navBtnNew navOpen" onClick="menuClose()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+                <img src="assets/img/assets/img/apptype/Deliverall/deliverall/menu-logo.png" alt="">
+            </div>
+            <!-- Top Menu Mobile -->
+            <div class="menu-left-new">
+                <!-- End Top Menu Mobile -->
+
+                <li><a href="index.php" class="">Home</a></li>
+                <li><a href="about-us" class="">About Us</a></li>
+                <li><a href="help-center" class="">Help Center</a></li>
+                <li><a href="contact-us" class="">Contact Us</a></li>
+
+
+                    <li><a href="sign-in" class="">Login</a></li>
+                    <b>
+                        <a href="sign-up-rider" class="">Sign up to Ride</a>
+                        <a class="" href="sign-up.php">become a driver</a>
+                    </b>
+
+
+            </div> 
+        </span>
+    </ul>
+</nav>    <!-- End: Left Menu-->
+    <!-- home page -->
+   
+        <!-- Top Menu -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700" rel="stylesheet">
+<header class="LOGGEDOUT">
+    <div class="header-inner">
+        <button id="navBtnShow" onClick="menuOpen()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div class="header-left">
+            <a href="index.php" class="logo_new"> <img src="assets/img/apptype/Deliverall/deliverall/logo.png" alt=""></a>
+            <ul>
+			 				 <li><a href="about" class="">About Us</a></li>
+				 <li><a href="contact-us" class="">Contact Us</a></li>
+				             </ul>
+        </div>
+        <div class="dynamic-data">
+            <select name="language" onchange="change_lang(this.value);">
+			                                        <option  value="AF">Afrikaans</option>
+                                                       <option selected value="EN">English</option>
+                                                       <option  value="TH">ไทย</option>
+                                                       <option  value="ID">Bahasa indonesia</option>
+                                                       <option  value="DE">Deutsche</option>
+                                                       <option  value="ES">Español</option>
+                                                       <option  value="IT">Italiano</option>
+                                                       <option  value="AR">عربى</option>
+                                                       <option  value="UR">اردو</option>
+                                                       <option  value="AZ">Azərbaycan</option>
+                                                       <option  value="ZH">中文</option>
+                                                       <option  value="PT">Português</option>
+                                                       <option  value="ZU">Zulu</option>
+                                                       <option  value="SW">Kiswahili</option>
+                                                       <option  value="KU">Kurdî (kurmancî)</option>
+                                                       <option  value="MS">Melayu</option>
+                                                       <option  value="SI">සිංහල</option>
+                                                       <option  value="TA">தமிழ்</option>
+                                                       <option  value="VI">Tiếng việt</option>
+                                                       <option  value="TL">Filipino</option>
+                                                       <option  value="KM">ភាសាខ្មែរ</option>
+                                                       <option  value="BN">বাঙালি</option>
+                                                       <option  value="JA">日本人</option>
+                                                       <option  value="KO">한국어</option>
+                                                       <option  value="YO">Yorùbá</option>
+                                                       <option  value="TR">Türk</option>
+                                                       <option  value="RU">русский</option>
+                                                       <option  value="FA">فارسی</option>
+                                                       <option  value="MY">မြန်မာ (ဗမာ)</option>
+                                                       <option  value="HI">हिंदी</option>
+                                                       <option  value="IW">עברית</option>
+                                                       <option  value="FR">Français</option>
+                                                       <option  value="DA">Dansk</option>
+                           </select>
+                    </div>
+		        <div class="header-right">
+            <ul>
+                <li><a href="help-center" class="">Help</a></li>
+				    
+                        
+				
+                <li><a href="sign-in"  class="unic-btn ">Sign In</a></li>
+            </ul>
+        </div>
+		    </div>
+</header>
+<script>
+ function change_curr(currency) {
+        var request = $.ajax({
+            type: "POST",
+            url: 'ajax_fpass_action.php',
+            data: {
+                action: 'changecurrency',
+                q: currency,
+            },
+            dataType: 'json',
+            beforeSend: function ()
+            {
+                //alert(id);
+            },
+            success: function (data)
+            {
+                location.reload();
+            }
+        });
+        request.fail(function (jqXHR, textStatus) {
+            alert("Request failed: " + textStatus);
+        });
+    }	
+</script>        <!-- End: Top Menu-->
+        <!-- contact page-->
+		<div class="page-contant">
+		<div class="page-contant-inner">
+		      <h2 class="header-page trip-detail">404-ERROR</h2>
+		      <!-- trips detail page -->
+		      <div class="static-page">
+		        <ol>
+ <li>Lore'm ipsum dolor sit amet, c'onsectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Done'c quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</li>
+ <li>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</li>
+</ol>
+
+<p> <br>
+Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>
+ <br>
+Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,<br>
+ </p>		      </div>
+		    </div>
+		</div>
+    
+    <!-- home page end-->
+    <!-- footer part -->
+    <footer>
+    <div class="footer-top">
+        <div class="footer-inner">
+            <div class="footer-column">
+			<h4>Contact Us</h4>
+                <address>123, Grand Villey, Jhon Brown Street,<br />      Johonson Road, Texas - 123456<br />      USA</address>
+                    <ul class="contact-data">
+                        <li><label>Phone : </label><a href="tel:+123-456-7890">+123-456-7890</a></li>
+                        <li><label>Email : </label><a href="mailto:123-456-7890">demo@demo.com</a></li>
+                    </ul>
+                </span>
+            </div>
+            <div class="footer-column">
+                <h4>Store</h4>
+
+            <ul>
+
+                <li><a href="contact-us">Contact Us</a></li>
+
+                <li><a href="about">About Us</a></li>
+
+                <li><a href="help-center">Help Center</a></li>
+
+                <li><a href="SignUp" style="text-transform: capitalize;">become a provider</a></li>
+
+            </ul>
+            </div>
+            <div class="footer-column">
+                 <h4>Other Pages</h4>
+
+            <ul>
+
+                <li><a href="how-it-works">How it Work</a></li>
+
+                <li><a href="trust-safty-insurance">Trust Safety & Insurance</a></li>
+
+                <li><a href="terms-condition">Terms & Conditions</a></li>
+
+                <li><a href="privacy-policy">Privacy Policy</a></li>
+
+            </ul>
+            </div>
+            <div class="footer-column">
+					                     <ul class="social-media-list">
+                                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+                                                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                                        <li><a href="#" target="_blank"><i class="fa fa-google"></i></a></li>
+                                                        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                             
+                            <li><a href="#" data-target="#newsletter" data-toggle="modal" class="MainNavText" id="MainNavHelp" ><i class="fa fa-envelope"></i></a></li>
+                                            </ul>
+                                <div class="download-links">
+                    <a href="#" target="_blank"><img src="assets/img/ios-store.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="assets/img/google-play_.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-inner">
+            &copy; Copyright 2018 @Cubejek        </div>
+    </div>
+</footer>
+<div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h4>Subscribe to our Newsletter</h4></div>
+            <div class="modal-body">
+
+                <div class="form-box-content export-popup">
+                    <form  name="newsletter" id="frmnewsletter" method="post" action="" class="clearfix" enctype="multipart/form-data">
+                        <div class="row">  
+                            <div class="col-lg-12">
+                                <label>Name<span class="red"> *</span></label>
+                            </div>
+                            <div class="col-lg-8 rideo-work">
+                                <input type="text" autocomplete="off" class="form-control" name="vNamenewsletter"  id="vNamenewsletter" value="" placeholder="Name" >
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-lg-12">
+                                <label>Email<span class="red"> *</span></label>
+                            </div>
+                            <div class="col-lg-8 rideo-work">
+                                <input type="text" autocomplete="off" class="form-control" name="vEmailnewsletter"  id="vEmailnewsletter" value="" placeholder="Email" > 
+                            </div> 
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-8 rideo-work">
+                                <label> <input type="radio" checked="" name="eStatus" value="Subscribe"></label>&nbsp;Subscribe&nbsp;&nbsp;&nbsp;
+                                <label><input type="radio" name="eStatus" value="Unsubscribe"></label>&nbsp;Unsubscribe                            </div>
+                        </div>
+                        <br>
+                        <!-- Captcha Syntax -->
+                        <span class="newrow">
+                            <strong class="captcha-newsletter"> <label >Captcha<span class="red">*</span></label>
+                                <input id="POST_CAPTCHA_NEWSLETTER" class="create-account-input" size="5" maxlength="5" name="POST_CAPTCHA_NEWSLETTER" type="text" autocomplete="off" style="border-bottom: 1px solid black;" placeholder=""  >
+
+                                <em class="captcha-dd">
+                                    <img src="captcha_code_news_file.php?rand=1998027859" id='newslettercaptchaimg' alt="" class="chapcha-img" />&nbsp;Can't read the image?                                    <a href='javascript:void(0)' onclick="refreshCaptchanewsletter();">Click here.</a>
+                                </em>
+
+                            </strong>
+                        </span>
+                        <!-- Close Captcha -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <input type="submit" class="btn btn-success"  name="submitss" id="submitss" value="Submit" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function refreshCaptchanewsletter() {
+    document.getElementById('POST_CAPTCHA_NEWSLETTER').value = '';
+    var img = document.images['newslettercaptchaimg'];
+    var codee = Math.random() * 1000;
+    img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + codee;
+}
+$(document).ready(function () {
+    var errormessage;
+    $('#frmnewsletter').validate({
+        rules: {
+            vNamenewsletter: {required: true, minlength: 2, maxlength: 40},
+            vEmailnewsletter: {required: true, email: true},
+            POST_CAPTCHA_NEWSLETTER: {required: true, remote: {
+                    url: 'ajax_captcha_newsletter_new.php',
+                    type: "post"
+                }}
+        },  
+        messages: {vNamenewsletter: {
+                required: 'This field is required.',
+                minlength: 'Name at least 2 characters long.',
+                maxlength: 'Please enter less than 40 characters.'
+            },
+            vEmailnewsletter: {remote: function () {
+                    return errormessage;
+                }},
+            POST_CAPTCHA_NEWSLETTER: {remote: 'Captcha did not match'}
+        },
+        onkeypress: true
+    });
+});
+</script><script>
+    function change_lang(lang) {
+        document.location = 'common.php?lang=' + lang;
+    }
+</script>
+<script type="text/javascript" src="assets/js/validation/jquery.validate.min.js" ></script>
+
+    <script type="text/javascript">
+        var LIVE_CHAT_LICENCE_NUMBER = '####';
+        window.__lc = window.__lc || {};
+        window.__lc.license = LIVE_CHAT_LICENCE_NUMBER;
+        (function () {
+            var lc = document.createElement('script');
+            lc.type = 'text/javascript';
+            lc.async = true;
+            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(lc, s);
+        })();
+    </script>
+    <noscript>
+    <a href="https://www.livechatinc.com/chat-with/####/">Chat with us</a>,
+    </noscript>
+        <!-- End:contact page-->
+        <div style="clear:both;"></div>
+    </div>
+    <!-- footer part end -->
+    <!-- Footer Script -->
+    <!-- Custome JS -->
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bootbox.min.js"></script>
+<script src="assets/js/magic.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".custom-select-new").each(function(){
+            $(this).wrap("<em class='select-wrapper'></em>");
+            $(this).after("<em class='holder'></em>");
+        });
+        $(".custom-select-new").change(function(){
+            var selectedOption = $(this).find(":selected").text();
+            $(this).next(".holder").text(selectedOption);
+        }).trigger('change');
+	
+		$(".label-i").on('click',function(e) {
+			var lang_id = $(this).data('id');
+			var from = $(this).data('value');
+			$.ajax({
+				type: "POST",
+				url: 'language_popup.php',
+				data: 'lang_id=' + lang_id + '&from='+from,
+				success: function (dataHtml)
+				{
+					$("#lang_popup").html(dataHtml);
+					$("#myModalHorizontal").modal('show');
+				},
+				error: function(dataHtml){
+					
+				}
+			});
+			e.stopPropagation();
+			return false;
+		});
+    });
+	
+	function updateLanguage(){
+		var formdata = $("#_languages_form").serialize();
+		$.ajax({
+			type: "POST",
+			url: 'language_save.php',
+			data: formdata,
+			success: function (dataHtml)
+			{
+				location.reload();
+			},
+			error: function(dataHtml){
+				
+			}
+		});
+	}
+	
+</script>
+<!-- Modal -->
+<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Change Language Label</h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body" id="lang_popup">
+                
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="updateLanguage();">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->    <!-- End: Footer Script -->
+	<script>
+	var main = function() {
+            
+           
+		$('.icon-menu').click(function() {
+		$('.menu').animate({
+			left: "0px"
+		}, 200);
+		$('body').animate({
+			left: "285px"
+		}, 200);
+
+	});
+	$('.icon-close').click(function() {
+ $('.menu').animate({
+  left: "-285px"
+ }, 200);
+
+
+$('body').animate({
+
+  left: "0px"
+
+  }, 200);
+
+});
+
+};
+
+$(document).ready(main);
+</script>
+</body>
+</html>

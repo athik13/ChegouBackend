@@ -1,0 +1,96 @@
+/*for admin create order page*/
+ .new-mobile001 {
+    display: none;
+}
+.header-top-button {
+    background: #ffffff;
+    border-radius: 3px;
+    color: #333333;
+    float: right;
+    font-size: 14px;
+    margin: 17px 14px 0 0;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    border: 1px solid #cccccc;
+    line-height: 21px;
+}
+.header {
+    position: relative;
+    /* right: 8px; */
+}
+.main_header .logo {
+    background: 0px;
+    border-bottom: 0px;
+    box-shadow: 0px 0px 0px inset;
+    float: left;
+}
+.main_header .logo .logo-lg {
+    display: block;
+    margin-top: 10px;
+    
+}
+.main_header .logo .logo-lg img {
+    max-height: 50px;
+}
+ .main_header .logo {
+    -webkit-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    height: 71px;
+    font-size: 20px;
+    text-align: center;
+    width: 230px;
+    padding: 0 15px;
+    font-weight: 300;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-transition: width .3s ease-in-out;
+    -ms-transition: width .3s ease-in-out;
+}
+.main_header .logo {
+    background-color: #171717;
+    color: #fff;
+    border-bottom: 1px solid #2c2c2c;
+    box-shadow: 0px -2px 0px #000 inset;
+}
+.main_header .logo .logo-mini {
+    display: none;
+}
+.logo-mini img, .logo-lg img {
+    vertical-align: middle;
+}
+.main_header{height: 71px;}
+.navbar-static-top span{font-size: 16px;}
+a:link {
+    text-decoration: none;
+}
+.header-top-button {
+    background: #ffffff;
+    border-radius: 3px;
+    color: #333333;
+    float: right;
+    font-size: 14px;
+    margin: 17px 14px 0 0;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    border: 1px solid #cccccc;
+    line-height: 21px;
+}
+.header-top-button img {
+    margin: 2px 8px 0 0;
+    vertical-align: middle;
+    float: left;
+}
+.header-admin-hotel {position:relative; display: flex;
+
+    padding: 0 15px;
+    
+    justify-content: space-between;}
+    .nav-admin-hotel{display: grid;
+  
+      justify-content: space-between;
+      
+      align-items: center; float: none!important; margin: 0 0 0 0!important;    text-align: center;
+    padding: 10px 0;}
+/*for admin create order page*/

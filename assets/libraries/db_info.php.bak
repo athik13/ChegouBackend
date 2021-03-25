@@ -1,0 +1,8 @@
+<?php
+
+date_default_timezone_set('Asia/Kuala_Lumpur');
+define('TSITE_SERVER','localhost');
+define('TSITE_DB','foodcycl_ride');
+define('TSITE_USERNAME','foodcycl_ride');
+define('TSITE_PASS','bangladesh@3256');
+?>

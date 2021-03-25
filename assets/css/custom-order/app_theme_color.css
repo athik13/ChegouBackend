@@ -1,0 +1,57 @@
+.search-page-wrap h3,
+.listing-main h4,
+#loadstore h4,
+ul.rest-listing li a:hover,
+ul.rest-listing li.rest-closed a:before,
+.rest-caption h3,
+.filter-data ul li a.active,
+.rest-menu-cat h3,
+.price-with-add .add_cart,
+.count-block.complex input,
+.payment-block-row.active .payment-head-block h3,
+.payment-block-row.passed .payment-head-block h3,
+.address-block a,
+ul.vaertical-tabs li.active,
+.heading-rest,
+.add-new-card-data h3,
+.pro-title-hold h4 {
+    color: #219201;
+}
+.deliver-address button[type="submit"],
+.rating,
+.proImg-block,
+.filter-data ul li a.active:before,
+.checkout-block button[type="submit"],
+.checkout-block button#apply-promo,
+.topay-row,
+.payment-block-row.passed .payment-block-inner i.user-icon,
+.payment-block-row.passed .payment-block-inner i.location-icon,
+#CustomerForm.general-form-new button[type="submit"],
+#CustomerForm.general-form-new input[type="button"] {
+    background-color: #219201;
+}
+ul.rest-listing li a:hover,
+.address-block:hover,
+.product-model {
+    border-color: #1f8104;
+}
+.radio-holder [type="radio"]:checked ~ .radio-box,
+.check-holder [type="checkbox"]:checked ~ .check-box {
+    box-shadow: 0 0 0 1px #219201;
+}
+.filter-data ul li a:hover {
+    color: #1f8104;
+}
+.checkout-block button#apply-promo:hover,
+#CustomerForm.general-form-new button[type="submit"]:hover,
+#CustomerForm.general-form-new input[type="button"]:hover {
+    background-color: #333;
+}
+.filter-data ul li a:hover:before,
+.checkout-block button[disabled] {
+    background-color: #219201;
+    opacity: 0.6;
+}
+.proImage {
+    box-shadow: 0 0 0 1px #1f8104;
+}

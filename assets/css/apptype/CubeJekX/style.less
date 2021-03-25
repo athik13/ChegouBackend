@@ -1,0 +1,327 @@
+@mainColor:#dc143c;
+@mainColorSecond: #dc143c;
+@mainTextColor:#ffffff;
+@mainTextColorHover:#ffffff;
+@mainTextColorHoverDefoult:#ffffff;
+@mainTextMenuColorHoverDefault:#000;
+@mainTextFilterColor:invert(0);
+@mainTextFilterColorHover:invert(0);
+@AlphamainColor:fade(@mainColor, 85%);/******* 80% alpha *********/
+@mainColorHover:#dc143c;/***** #8a8a00 ***/
+@hoverColor:#757575;
+@mainfilterimg:invert(50%) sepia(80%) saturate(5404%) hue-rotate(79deg) brightness(99%) contrast(94%);
+@mainfilterimgHover:invert(26%) sepia(99%) saturate(1224%) hue-rotate(77deg) brightness(96%) contrast(96%);
+@hoverColo-Light:#f6f6f6;
+@buttonColor:#000;
+@buttonColorHover:#757575;
+@mainColorLight:lightred;
+@gotopBGColor:#dc143c;
+@gotopImgColor:invert(0);
+@gotopHoverBGColor:#dc143c;
+@gotopHoverImgColor:invert(0);
+
+.gen-btn, .button-block a.gen-btn, .modal .modal-footer .btn{
+    background: @buttonColor;
+}
+.deliveraddressIcon-clo-av .cart_b .cart_count{
+    color: @mainColor;
+    background: @mainTextColor;
+}
+
+ul.tab-row.homepage li:before {
+    background-color: @mainColorLight;
+}
+header,
+.how-it-works-section ul li:first-child:before,
+.how-it-works-section ul li:first-child:after,
+.services ul li .service-block:hover a,
+.benefits ul li i,
+.benefits .benefits-right ul li i,
+.get_app_area,
+.howitworks .horizonatal-title h3:after,
+.howitworks ul li:hover i:after,
+.benefits .horizonatal-title h3:after,
+.delivery-left button,
+.destination ul li:hover .destination-caption,
+.charters ul li:hover .charters-caption,
+.dark-variant.benefits,
+.article-image,
+ul.tab-switch,
+.invoice-pay-type,
+.track-order-data ul li.passed i,
+.profile-image i,
+.booking-header,
+.radio-button:after,
+.check-button:after,
+.custom-modal .model-header,
+.custom-modal .modal-header,
+.modal .modal-header,
+.upload-block strong,
+.booking-heading select option {
+    background-color: @mainColor;
+}
+.benefits.dark-variant ul.listing-style li i {
+    background-color: @mainColorHover;
+}
+.benefits.dark-variant ul.listing-style li {
+    border-color: @mainColorHover;
+}
+
+.benefits ul li:hover i {
+    background-color: @mainColorHover;
+}
+.footer-top,
+.footer-bottom {
+    position: relative;
+    z-index: 1;
+    background-color: @mainColor;
+}
+.services.homepage ul li .service-block a::before {
+    background-color: @mainColor;
+}
+.footer-top:after,
+.footer-bottom:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.70);
+}
+ul.tab-row li span,
+.categories-caption h2,
+.how-it-works-section h3,
+.how-it-works-section ul li strong,
+.safety-section h3,
+.call-section h3,
+.signup-block a,
+.services h3,
+.benefits ul li:hover strong,
+.cartype h3,
+.article-right h4,
+.article-right h4,
+.call-section.taxi-variant h3,
+.call-section.taxi-variant b,
+.call-section.taxi-variant p b,
+.fleet.food-variant h3,
+.benefits h3,
+.restaurant h3,
+.howitworks h3,
+.solutions h3,
+.solutions-left h4,
+.features h3,
+.destination h3,
+.charters h3,
+.step-sec .step-sec-inner > h3,
+.profile-title h4,
+.heading-area h1,
+.about-caption h3,
+.gen-cms-page h2.header-page,
+.faq-bottom-part ul li a,
+.login-block-heading label,
+.profile-caption .page-heading h1,
+.thanks-holder h2,
+.banner-section.taxi-app ul.tab-row li a,
+.delivery h3,
+.filter-navbar .navbar-filter-options a:hover
+ {
+    color: @mainColor;
+}
+.page-contant-inner h2, .header-page p{
+    color: @mainColor;
+}
+
+.header-page::before, .contact-form b .submit-but, .delivery .horizonatal-title h3:after{
+    background-color: @mainColor;
+}
+
+ul.tab-switch li.active a {
+    color: @mainColor;
+}
+
+.how-it-works-section.homepage-variant ul li strong {
+    color: @buttonColor;
+}
+.signup-block a:hover:hover,
+.categories-caption h2 span {
+    color: @buttonColorHover;
+}
+.categories-caption a.book-btn,
+.call-section a.book-btn,
+.btn-hold input[type="submit"],
+.deliver-address button[type="submit"],
+.gen-btn,
+.profile-block .profile-caption-header button,
+button.waves-effect,
+.booking-footer .submitbtn,
+.filter-form input[type="submit"],
+.filter-form button,
+.filter-form a.gen-btn,
+.button-block a.gen-btn,
+.fileUploading:before {
+    background-color: @buttonColor;
+}
+
+.categories-caption a.book-btn:hover,
+.call-section a.book-btn:hover,
+.btn-hold input[type="submit"]:hover,
+.btn-hold input[type="submit"]:focus,
+.deliver-address button[type="submit"]:hover,
+.deliver-address button[type="submit"]:focus,
+.gen-btn:hover,
+.gen-btn:focus,
+.profile-block .profile-caption-header button:hover,
+button.waves-effect:hover,
+button.waves-effect:focus,
+.booking-footer .submitbtn:hover,
+.booking-footer .submitbtn:focus,
+.filter-form input[type="submit"]:hover,
+.filter-form button:hover,
+.filter-form a.gen-btn:hover,
+.gen-btn:hover,
+.button-block a.gen-btn:hover,
+.button-block a.gen-btn:focus,
+.fileUploading:hover:before {
+    background-color: @buttonColorHover;
+}
+.how-it-works-section ul li:first-child:before {
+    box-shadow: 0 0 0 2px @mainColor inset;
+}
+.services ul li .service-block:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06), 0 0 0 1px @mainColor;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06), 0 0 0 1px @mainColor;
+}
+.benefits.food-variant ul li i {
+    background-color: transparent;
+}
+.faq-top-part li.Active a {
+    box-shadow: 0 0 0 2px @mainColor inset;
+    -webkit-box-shadow: 0 0 0 2px @mainColor inset;
+    color: @mainColor;
+}
+.howitwork,
+ul.tab-row li:after,.banner-image-first.first-overlay::before {
+    background-color: @mainColor;
+}
+ul.user-menu,
+ul.user-menu li.logo {
+    background-color: @mainColorHover;
+}
+.profile-image {
+    box-shadow: 0 0 0 2px @mainColor;
+}
+.earning-block,
+.toggle-switch input[type="checkbox"]:checked ~ .toggle-base,
+.toggle-switch input[type="radio"]:checked ~ .toggle-base {
+    background-color: @AlphamainColor;
+}
+.radio-button,
+.check-button {
+    box-shadow: 0 0 0 1px @mainColor inset;
+}
+.thanks-holder img {
+    filter: @mainfilterimg;
+}
+
+
+
+
+header ul li a,
+.benefits.dark-variant ul.listing-style li strong,
+.benefits.dark-variant ul.listing-style li p,
+.dark-variant.benefits h3,
+.dark-variant.benefits .benefits-inner > strong,
+.get_app_content .section_title h2,
+.get_app_content p, .get_app_content ul li,
+ul.tab-switch li a, .upload-block strong,
+.custom-modal .model-header h4, .modal .modal-header h4,
+.custom-modal .model-header i, .profile-image i,
+.booking-header,  .pick-drop-location input::placeholder, .invoice-pay-type,
+.destination ul li:hover .destination-caption, .charters ul li:hover .charters-caption,
+.charters ul li:hover .charters-caption span, .booking-heading select option, header{
+
+    color: @mainTextColor;
+    
+}
+.menu-ico span, .menu-ico span::after, .menu-ico span::before, .services ul li .service-block:hover a,
+.header-right ul li.login::after, .header-right ul li.lang::after{
+    background-color: @mainTextColor;
+}
+
+header ul li a:hover, header ul li a:hover, header ul li a:focus, header ul li a.active {
+  color: @mainTextColorHover;  
+  
+}
+
+header .header-right ul li a:hover {
+    color: @mainTextColorHoverDefoult;  
+    
+  }
+.dropdown-content .column a:hover {
+    color: @mainTextMenuColorHoverDefault;  
+    
+  }
+
+.header-left ul li a::after
+{
+    background-color: @mainTextColor;
+}
+.services ul li .service-block:hover a
+{
+    background-color:@gotopBGColor;
+}
+.services ul li .service-block:hover, .services ul li .service-block:hover{
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06), 0 0 0 1px @gotopBGColor;
+}
+
+header ul li a img, .benefits.dark-variant ul.listing-style li i img,
+.get_app_content ul li::before, .benefits ul li i img,
+.benefits ul li i img, .delivery-left button img {
+    filter: @mainTextFilterColor;
+    -webkit-filter: @mainTextFilterColor;
+}
+
+header ul li a:hover img {
+    filter: @mainTextFilterColorHover;
+    -webkit-filter: @mainTextFilterColorHover;
+}
+
+.booking-heading select{
+    color: @mainTextColorHoverDefoult;
+    filter: @mainTextFilterColor;
+    -webkit-filter: @mainTextFilterColor;
+
+}
+
+
+.gotop img {
+    filter: @gotopImgColor;
+    -webkit-filter: @gotopImgColor ;
+}
+
+.gotop:hover img {
+    filter: @gotopImgColor;
+    -webkit-filter: @gotopImgColor ;
+}
+
+
+.gotop{
+    background-color: @gotopBGColor;
+}
+.gotop:hover{
+    background-color: @gotopHoverBGColor;
+}
+
+.restaurant-section, .restaurant-section-title {
+    background-color: @mainColorSecond;
+}
+
+.restaurant-section-bg-1 {
+    background-color: @mainColorSecond;
+}
+
+.restaurant-section-bg-2 {
+    background-color: @mainTextColor;
+}

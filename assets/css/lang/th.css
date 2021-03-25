@@ -1,0 +1,95 @@
+/* .banner-caption h2 { letter-spacing: 15px; font-size: 74px; margin-left: 1px;}
+.bookingservice h3{font-size: 37px;}
+.personal-ride-left{top: 38px;}
+.banner-caption::before{right: 23px; top: -5px;}
+.how-it-works-section h3::before{left: 523px;}
+.deliveryall h3::before{right: 60px; top: 34px;}
+.bookingservice h3::before{left: 497px; top: 0px;}
+.banner-section-inner{padding: 0 15px 0 22px;}
+.safety-section p{line-height: 32px;}
+.deliveryall h3{font-size:48px;}
+.captcha-abx { font-size: 15px; margin: -4px 0 0 3px; display: inline-flex;}
+.home-hero-page-right-text span { margin: 22px 0 0 35px;}
+.sign-in-driver p{ margin:0px 0; padding:0px; float:left; width:90%; font-size:16px; color:#000000; line-height:27px;  word-wrap: break-word; min-height: 86px; !important}
+.profile-Password span .profile-Password-save{width: 133px;}
+.get-there-inner span{width: 150px;}
+.gallery-page .box .full-caption h3 p{font-size: 15px !important;}
+.gallery-page .box .full-caption h3 strong {font-size: 20px !important;}
+
+
+
+@media screen and (min-width:1px) and (max-width:414px) {
+.categories-section ul.flex-row li { width: calc(49% - 0px); width: -o-calc(49% - 0px); width: -ms-calc(49% - 0px); width: -moz-calc(49% - 0px); width: -webkit-calc(49% - 0px);}
+.captcha-dd { font-size: 15px; display: inline-flex;}
+.captcha-abx { font-size: 15px; display: inline-flex;}
+.captcha-aby { font-size: 15px; display: inline-flex;}
+
+.banner-section-inner { padding: 48px 15px 70px 22px;}
+.banner-caption h1{font-size: 40px;}
+.banner-caption h2{font-size: 28px;}
+.bookingservice h3 { font-size: 27px;}
+.personal-ride-left { top: 8px;}
+.safety-section-right { width: auto; padding: 20px 0 0px 0;}
+.how-it-works-section h3, .download-section h3, .map-caption h3, .safety-section h3, .personal-ride-caption h3, .call-section h3 { font-size: 35px;}
+ 
+/*.header-page::before{bottom: 39px !important;}
+.header-page-driver-glt::before { bottom: 0px !important;}
+.header-page-add-glt::before{bottom: 40px !important;}
+.sign-in-driver p{min-height:0px;}
+}
+
+@media screen and (min-width:1px) and (max-width:350px) {
+.header-page::before { bottom: -10px !important;}
+.header-page-add-glt::before{bottom: 40px;}
+.header-page-d1::before { bottom: 40px;}
+.header-page-driver-glt::before{bottom: 40px !important;}
+.sign-in-driver p{min-height:0px;}
+}
+
+@media screen and (min-width:568px) and (max-width:666px) {
+
+
+.logo { margin-left: 5%; width: 69%; !important}
+.home-hero-page-right-text span { margin: 11px 0 0 35px;}
+.sign-in-driver p { min-height: 108px;}
+}
+
+
+@media screen and (min-width:1px) and (max-width:767px) {
+    .captcha-dd { font-size: 15px; display: inline-flex;}
+    .captcha-abx { font-size: 15px; display: inline-flex;}
+    .captcha-aby { font-size: 15px; display: inline-flex;}
+.header-page-d1{font-size: 42px;}
+.header-page::before{bottom: 0px;}
+.header-page-driver-glt::before{bottom: 40px !important;}
+}
+
+@media screen and (min-width:667px) and (max-width:767px) {
+.sign-in-driver p { min-height: 81px;}
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .captcha-dd { font-size: 15px; display: inline-flex;}
+.captcha-abx { font-size: 15px; display: inline-flex;}
+.captcha-aby { font-size: 15px; display: inline-flex;}
+.categories-section ul.flex-row li { width: calc(33% - 30px); width: -o-calc(33% - 30px); width: -ms-calc(33% - 30px); width: -moz-calc(33% - 30px); width: -webkit-calc(33% - 30px);}
+
+.banner-section-inner { padding: 54px 15px 0 22px;}
+.banner-caption h1{font-size: 72px;}
+.personal-ride-left { top: 6px;}
+
+
+
+.home-hero-page-right-text{width: 323px !important;}
+.sign-in-driver p{ min-height: 135px !important; width:90%;}
+.sign-in-rider p { min-height: 133px;}
+.footer-box1 .lang b{font-size:14px;}
+.logo { margin-left: 5% !important; width: 62% !important;}
+.logo .top-logo-link{margin: 0 0 0 1%;}
+.get-there-inner span { width: 201px;}
+}
+@media screen and (min-width:1024px) and (max-width:1099px) {
+.footer-box1 .lang b{font-size:14px;}
+.logo { margin-left: 5%; width: 69%; !important}
+}*/

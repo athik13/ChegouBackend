@@ -10,13 +10,13 @@
   ],
   "dependencies": {
     "scc-broker-client": "^7.0.2",
-    "socketcluster-client": "^15.0.3",
-    "socketcluster-server": "^15.0.1",
+    "socketcluster-client": "^19.2.3",
+    "socketcluster-server": "^19.1.1",
     "connect": "^3.6.6",
     "eetase": "^3.0.1",
     "express": "^4.16.3",
     "morgan": "^1.7.0",
-    "nodemon": "^1.18.9",
+    "nodemon": "^2.0.3",
     "sc-errors": "^2.0.0",
     "serve-static": "^1.13.2",
     "uuid": "^3.3.2"

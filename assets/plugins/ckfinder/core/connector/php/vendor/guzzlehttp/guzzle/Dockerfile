@@ -9,7 +9,7 @@ RUN set -xe \
     && composer require guzzlehttp/guzzle
 
 
-FROM php:7.2
+FROM php:7.4.33
 
 RUN mkdir /guzzle
 

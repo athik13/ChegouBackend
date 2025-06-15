@@ -1,3 +1,4 @@
 sphinxcontrib-phpdomain
 hg+https://bitbucket.org/tk0miya/tk.phpautodoc
 
+requests>=2.32.4 # not directly required, pinned by Snyk to avoid a vulnerability
